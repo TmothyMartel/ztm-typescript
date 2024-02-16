@@ -8,3 +8,17 @@
 //
 // Useful links:
 // https://www.typescriptlang.org/docs/handbook/variable-declarations.html#let-declarations
+
+const course = "typescript";
+
+const amount = 10;
+const oneThousand = 1e3;
+const hexByte = 0xff;
+
+const bigInt = 9000n;
+
+const missing = undefined;
+const empty = null;
+
+let someNum = 0;
+someNum = 2;
