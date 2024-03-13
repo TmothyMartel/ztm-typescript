@@ -9,3 +9,24 @@ import { strict as assert } from "assert";
 //
 // Useful links:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
+const answer = 2 + 2;
+assert.equal(answer, 4);
+
+if (answer > 4) {
+    console.log(">4");
+}
+
+if (answer === 4) {
+    console.log("=4");
+} else {
+    console.log("!4");
+}
+
+if (answer < 4) {
+    console.log("<4");
+} else if (answer > 4) {
+    console.log(">4")
+} else {
+    console.log("=4");
+}
+
