@@ -8,3 +8,15 @@
 //
 // Useful links:
 // https://www.typescriptlang.org/docs/handbook/iterators-and-generators.html
+const nums = {
+    one: 1,
+    two: 2,
+    three: 3,
+}
+
+let property: keyof typeof nums;
+
+for (property in nums) {
+    console.log(property);
+    console.log(`${nums[property]}`);
+}
