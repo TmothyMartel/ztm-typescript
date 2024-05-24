@@ -1,4 +1,3 @@
-import axios from "axios";
 import { z } from "zod";
 import type { AxiosStatic } from "axios";
 
@@ -10,7 +9,7 @@ const locationInfoSchema = z.object({
 
 export type LocationInfo = z.infer<typeof locationInfoSchema>;
 
-export async function fetchLocationData(axious: AxiosStatic, apiUrl:string, locationName:string ): Promise<LocationInfo> {
+export async function fetchLocationData(axios: AxiosStatic, apiUrl:string, locationName:string ): Promise<LocationInfo> {
     const options = {
         method: "GET",
         url: apiUrl,
