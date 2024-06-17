@@ -14,7 +14,7 @@ dotenv.config();
 const environment = process.env.NODE_ENV;
 const templates = new nunjucks.Environment(new nunjucks.FileSystemLoader("src/backend/templates"));
 
-const WEATHER_API_URL = "https://api/open-meteo.com/v1/forecast";
+const WEATHER_API_URL = "https://api.open-meteo.com/v1/forecast";
 const GEOCODE_API_URL = "https://geocode.maps.co/search";
 const HTTP_CLIENT = axios;
 
