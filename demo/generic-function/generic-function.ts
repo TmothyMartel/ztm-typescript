@@ -11,3 +11,31 @@ import { strict as assert } from "assert";
 //
 // Useful links:
 // https://www.typescriptlang.org/docs/handbook/2/generics.html#hello-world-of-generics
+
+// examples of functions without generics
+function getFirstNumber(arr: number[]): number | undefined {
+    if (arr.length > 0) {
+        return arr[0];
+    }
+    return undefined;
+}
+
+function getFirstString(arr: string[]): string | undefined {
+    if (arr.length > 0) {
+        return arr[0];
+    }
+    return undefined;
+}
+
+// generic function
+function getFirst<T>(arr: T[]): T | undefined {
+    if (arr.length > 0) {
+        return arr[0];
+    }
+    return undefined;
+}
+
+getFirst([1,2])
+getFirst(["a", "b"])
+getFirst([true, false])
+getFirst([{}, {}])
