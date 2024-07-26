@@ -35,7 +35,7 @@ function getFirst<T>(arr: T[]): T | undefined {
     return undefined;
 }
 
-getFirst([1,2])
-getFirst(["a", "b"])
-getFirst([true, false])
-getFirst([{}, {}])
+getFirst([1,2]);
+getFirst(["a", "b"]);
+getFirst([true, false]);
+getFirst([{}, {}]);
